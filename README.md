@@ -1,77 +1,135 @@
-SplitShips
-Overview
-SplitShips is a web application designed to optimize shipping for small businesses by enabling collaborative shipping. The platform allows users to share shipment space, reducing costs and improving sustainability. It addresses the challenges of high shipping costs and underutilized shipment capacities with features like real-time tracking, dynamic pricing, and advanced search capabilities.
-Purpose
+# 🚢 SplitShips
+
+## Overview  
+**SplitShips** is a web application that optimizes shipping for small businesses through **collaborative logistics**. The platform allows users to share shipment space, lowering costs and reducing environmental impact. By combining real-time tracking, dynamic pricing, and robust search tools, SplitShips addresses common shipping inefficiencies for small-scale businesses.
+
+---
+
+## 🎯 Purpose  
 SplitShips aims to:
-Reduce shipping costs for small businesses through shared logistics.
-Enhance sustainability by optimizing shipment space.
-Provide a user-friendly platform for managing shipments, tracking, and documentation.
-Features
-User Account Management: Register and log in using Firebase authentication.
-Shipment Listings: Create and view collaborative shipping listings.
-Dynamic Pricing: Automatically calculate shared shipping costs based on real-time data.
-Real-Time Tracking: Monitor shipments with Firebase synchronization.
-Two-Way Rating System: Rate businesses post-shipment for trust and reliability.
-Advanced Search & Filtering: Filter shipments by size, price, availability, and date.
-Document Management: Upload and manage shipment-related documents securely.
-Requirements
-Functional Requirements
-Users must register with a valid email to access the platform.
-Listings are visible on the dashboard after login.
-Real-time shipment tracking updates status instantly.
-Ratings are stored and displayed post-shipment.
-Documents are securely stored for compliance.
-Non-Functional Requirements
-Built with Firebase for authentication and data synchronization.
-Cross-platform compatibility (mobile and desktop).
-Consistent UI across devices.
-Supports at least 100 simultaneous users.
-Response time under 2 seconds in high-traffic scenarios.
-Ensures data privacy and regulatory compliance.
-Installation
-Clone the Repository:
-bash
+- **Reduce shipping costs** for small businesses via shared logistics.
+- **Promote sustainability** by maximizing shipment space utilization.
+- **Streamline shipment management** with intuitive tools for tracking and documentation.
+
+---
+
+## ✨ Features  
+- **User Account Management**  
+  Secure registration and login using Firebase Authentication.
+
+- **Shipment Listings**  
+  Create, browse, and manage collaborative shipment opportunities.
+
+- **Dynamic Pricing**  
+  Automatically calculate shared shipping costs based on real-time data (e.g., package weight, destination, and available space).
+
+- **Real-Time Tracking**  
+  Monitor shipment status with Firebase-powered live updates.
+
+- **Two-Way Rating System**  
+  Foster trust and transparency with mutual post-shipment reviews.
+
+- **Advanced Search & Filtering**  
+  Filter shipments by size, price, date, and availability.
+
+- **Document Management**  
+  Securely upload and manage shipment-related documents (invoices, customs forms, etc.).
+
+---
+
+## ✅ Requirements  
+
+### Functional Requirements
+- Users must register with a valid email to access platform features.
+- Shipment listings are viewable on the dashboard post-login.
+- Shipment statuses must update in real time.
+- Ratings and reviews are stored and shown after shipment completion.
+- Uploaded documents must be securely stored and accessible when needed.
+
+### Non-Functional Requirements
+- Built using Firebase for authentication and real-time data sync.
+- Cross-platform support: works on desktop and mobile browsers.
+- UI/UX remains consistent across all device types.
+- Supports a minimum of 100 concurrent users.
+- Average response time should remain under 2 seconds under high traffic.
+- Adheres to data privacy and compliance regulations.
+
+---
+
+## 🛠️ Installation
+
+### Clone the Repository
+```bash
 git clone <repository-url>
-Set Up Firebase:
-Create a Firebase project at console.firebase.google.com.
-Configure authentication and Firestore database.
-Add your Firebase config to the project’s environment variables.
-Install Dependencies:
-bash
+```
+
+### Set Up Firebase
+1. Create a Firebase project: [https://console.firebase.google.com](https://console.firebase.google.com)
+2. Enable Firebase Authentication and Firestore.
+3. Add your Firebase configuration to the environment variables.
+
+### Install Dependencies
+```bash
 npm install
-Run the Application:
-bash
+```
+
+### Run the Application
+```bash
 npm start
-Access the App:
-Open http://localhost:3000 in your browser.
-Deployment
-Deployed on a cloud platform (e.g., Firebase Hosting, Vercel).
-Requires Firebase backend integration for authentication, database, and real-time updates.
-Ensure environment variables are set for production.
-Project Structure
-/src: Application source code.
-/docs: Documentation, including SRS and UI design.
-/scripts: Deployment and setup scripts.
-/tests: Unit and integration tests.
-Contributors
-Robert Dunham: Firebase integration, sprint documentation.
-Eyob Gizachew: UI design requirements.
-Kidus Sebsibe: Dynamic pricing model.
-Yeamlak Workneh: Backend features, document management.
-Documentation
-System Requirements Specification (SRS) (./docs/SRS.pdf)
-User Interface Design Document
-System Design Document
-Open Issues
-Finalizing the dynamic pricing algorithm.
-Enhancing advanced search filters.
-Testing real-time data synchronization.
-Strengthening document upload functionality.
-License
-This project is developed under the terms outlined in the Agreement Between Customer and Contractor (see SRS Appendix A).
-Contact
-For questions or support, reach out to the SplitShips team:
-Robert Dunham
-Eyob Gizachew
-Kidus Sebsibe
-Yeamlak Workneh
+```
+
+### Access Locally
+Open `http://localhost:3000` in your browser.
+
+---
+
+## 🚀 Deployment
+- Deployed on a cloud platform (e.g., **Firebase Hosting**, **Vercel**).
+- Firebase backend handles authentication, data storage, and real-time tracking.
+- Make sure environment variables are properly set in production.
+
+---
+
+## 🗂️ Project Structure
+```
+/src       → Application source code  
+/docs      → Documentation (SRS, UI design, system design)  
+/scripts   → Deployment and setup scripts  
+/tests     → Unit and integration tests  
+```
+
+---
+
+## 👥 Contributors
+- **Robert Dunham** – Firebase Integration, Sprint Documentation  
+- **Eyob Gizachew** – UI Design & Requirements  
+- **Kidus Sebsibe** – Dynamic Pricing Model  
+- **Yeamlak Workneh** – Backend Features, Document Management
+
+---
+
+## 📄 Documentation
+- [System Requirements Specification (SRS)](./docs/SRS.pdf)
+- User Interface Design Document
+- System Design Document
+
+---
+
+## 🧩 Open Issues
+- Finalizing the dynamic pricing algorithm.
+- Enhancing advanced search filters.
+- Testing real-time data synchronization.
+- Strengthening document upload functionality.
+
+---
+
+## 📜 License
+This project is developed under the terms outlined in the **Agreement Between Customer and Contractor** (see SRS Appendix A).
+
+---
+
+## 📬 Contact
+For support or questions, contact the SplitShips team:  
+Robert Dunham, Eyob Gizachew, Kidus Sebsibe, Yeamlak Workneh
+
+---
